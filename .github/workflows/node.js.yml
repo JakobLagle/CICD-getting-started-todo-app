@@ -20,7 +20,7 @@ jobs:
       - run: npm ci
       - run: npm test --if-present
         env:
-          DB_LOCATION: /tmp/todos
+          SQLITE_DB_LOCATION: /tmp/todos/todo.db
 
   build-client:
     runs-on: ubuntu-latest
