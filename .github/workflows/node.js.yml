@@ -19,6 +19,8 @@ jobs:
           node-version: 20.x
       - run: npm ci
       - run: npm test --if-present
+        env:
+          DB_LOCATION: /tmp/todos
 
   build-client:
     runs-on: ubuntu-latest
